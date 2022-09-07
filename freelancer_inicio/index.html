@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Fuente usada "Krub" con los dos estilos 400 y 700(bold)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!--Cargar la hoja de estilos (css)-->
+    <!-- "href es exclusivo de los enlaces y los links" -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Etiqueta span separa una frase en este caso -->
+        <h1 class="titulo">Yazmin Gutierrez <span>Freelancer</span></h1>
+    </header>
+    <!-- Clase de utilidad(nav-bg) -->
+    <div class="nav-bg"> 
+        <!-- Menu de un solo nivel (se una "nav") -->
+        <nav class="navegacion-principal contenedor">
+            <!-- Etiqueta que realiza el enlace a otra pagina -->
+            <!-- El atributo "href" me direcciona al a pagina que quiero ir al dar clic -->
+            <!-- "#" simula el enlace, porque el proyecto va a ser de una sola pagina -->
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+        <!--Si el primer elemento es un heading se debe utilizar un section-->
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
+            <div class="ubicacion">
+                <img src="img/img-maps.svg" alt="">  
+                <p>Popayán, Colombia</p>
+            </div>
+            <a class="boton" href="#">Contactar</a>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="contenedor sombra">
+        <!-- En este caso no es necesario poner un seccion porque el main es mas importante que el section -->
+        <h2>Mis Servicios</h2>
+        <div class="servicios">
+            <section class="servicio">
+                <!-- Debido a que existe un nuevo heading debe haber un section que lo contenga -->
+                <h3>Diseño Web</h3>
+                <div class="iconos">
+                    <img src="img/img-diseño-webb.svg" alt="">  
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus rutrum tellus velit, non feugiat nulla placerat et.</p>
+            </section>
+
+            <!-- Debido a que existe un nuevo heading debe haber un section que lo contenga -->
+            <section class="servicio">
+                <h3>Aplicaciones Web</h3>
+                <div class="iconos">
+                    <img src="img/img-android.svg" alt="">  
+                    <img src="img/img-apple.svg" alt="">                 
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus rutrum tellus velit, non feugiat nulla placerat et.</p>
+            </section>
+            
+            <!-- Debido a que existe un nuevo heading debe haber un section que lo contenga -->
+            <section class="servicio">
+                <h3>E-Commerce</h3>
+                <div class="iconos">
+                    <img src="img/img-card.svg" alt="">  
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus rutrum tellus velit, non feugiat nulla placerat et.</p>
+            </section>  
+        </div><!--class servicios-->
+   
+        <!-- Debido a que existe un nuevo heading debe haber un section que lo contenga -->
+        <section>
+            <h2>Contacto</h2>
+            <!-- Todo lo que esta dentro va en el formulario -->
+            <form class="formulario">
+                <!-- Agrupa diferentes campos -->
+                <fieldset>
+                    <legend>Contáctanos llenando todos los campos</legend>
+                    
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre:</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Teléfono:</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Correo:</label>
+                            <input class="input-text" type="email" placeholder="Tu Correo">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Mensaje:</label>
+                            <textarea class="input-text" rows="5"></textarea>
+                        </div>
+                    </div> <!--class contenedor-campos--> 
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>          
+                </fieldset>
+            </form>
+        </section>  
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Yazmin Gutierrez <span>&#128151;</span>Freelancer </p>
+    </footer>
+        
+</body>
+</html>
